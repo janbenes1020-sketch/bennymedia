@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mně | Jan Beneš - Digitální tvorba</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: #09090b; 
+            color: #f8fafc; 
+            overflow-x: hidden;
+        }
+        .border-custom { border-color: #27272a; }
+        .header-uppercase { text-transform: uppercase; letter-spacing: 0.05em; }
+    </style> 
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+    <nav class="sticky top-0 z-50 bg-[#09090b]/90 backdrop-blur-md border-b-4 border-custom px-6 py-3 h-20 grid grid-cols-2 md:grid-cols-3 items-center">
+        <div class="hidden md:block"></div>
+        
+        <div class="text-left md:text-center">
+            <a href="web.html" class="text-2xl md:text-3xl font-black tracking-tighter hover:text-gray-400 transition">BENNY.MEDIA</a>
+        </div>
+        
+        <div class="flex justify-end items-center gap-4 md:gap-6 font-bold text-[10px] md:text-xs tracking-widest uppercase">
+            <a href="web.html#sluzby" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap">Služby</a>
+            <a href="https://drive.google.com/drive/folders/1-1MyCtyf68ZHPN6m_5NKNIA0el-AaSQm?usp=drive_link" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap">Portfolio</a>
+            <a href="o-mne.html" class="underline decoration-2 underline-offset-8 whitespace-nowrap text-gray-400">O mně</a>
+            <a href="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap text-3b82f6 text-[#3b82f6]">Hovor</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+    <!-- Tady je ten nový nadpis vloženej hned na začátek -->
+    <section class="p-10 md:p-20 border-b-4 border-custom text-center bg-[#111113]">
+        <h2 class="text-4xl md:text-6xl font-black header-uppercase tracking-tighter" data-aos="fade-up">O mně</h2>
+        <p class="mt-4 font-medium opacity-60 text-lg" data-aos="fade-up" data-aos-delay="100">Kdo stojí za kamerou, střihem a kódem.</p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 border-b-4 border-custom">
+        <div class="h-[60vh] md:h-auto bg-[#111113] border-b-4 md:border-b-0 md:border-r-4 border-custom overflow-hidden" data-aos="fade-right">
+            <img src="profilovka.jpg" alt="Jan Beneš" class="w-full h-full object-cover transition-all duration-700">
+        </div>
+
+        <div class="p-8 md:p-16 lg:p-24 flex flex-col justify-center bg-[#09090b]" data-aos="fade-left">
+            <span class="text-sm font-bold tracking-widest text-zinc-500 uppercase mb-2">Kdo stojí za kamerou a kódem</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-8 header-uppercase leading-none">Jan Beneš</h1>
+            
+            <div class="font-medium text-base md:text-lg leading-relaxed space-y-6 text-zinc-300">
+                <p>
+                    Ahoj, jsem Honza, ale většina lidí v digitálním světě mi říká <span class="text-white font-bold">Benny</span>. Jako nezávislý tvůrce pomáhám značkám a projektům vystoupit z davu. Nedělám kompromisy – buď to dělám pořádně, nebo vůbec.
+                </p>
+                <p>
+                    Můj revír je kompletní digitální produkce. Od <span class="text-white font-bold">programování čistých, rychlých webů</span> přes <span class="text-white font-bold">dynamické natáčení akcí</span> až po precizní <span class="text-white font-bold">střih videa</span> a <span class="text-white font-bold">správu sociálních sítí</span>.
+                </p>
+                <p>
+                    Můj cíl je jednoduchý: doručit vám moderní digitální identitu a obsah, který reálně přináší výsledky, dosahy a nové klienty. Sjíždím nejnovější digitální trendy a přetvářím je do praxe.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+        <section id="calendly" class="border-b-4 border-custom bg-[#f8fafc] text-[#09090b] p-6 md:p-16">
+            <div class="max-w-5xl mx-auto" data-aos="zoom-in">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-6xl font-black mb-4 header-uppercase">Rezervujte si konzultaci</h2>
+                    <p class="font-medium text-lg max-w-2xl mx-auto opacity-80">
+                        Vyberte si volný čas a probereme, jak společně nakopneme váš projekt, web nebo sociální sítě.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden border-4 border-[#09090b]">
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich" style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="kontakt" class="bg-[#09090b] text-white py-12 px-6 md:px-12 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+            <div class="text-xs md:text-sm">
+                <h4 class="font-black mb-2 uppercase tracking-widest text-[10px] opacity-50">Fakturační údaje</h4>
+                <p class="font-bold">Jan Beneš<br>IČO: 21129380<br>jan.benes1020@gmail.com<br>771160301</p>
+            </div>
+            <div class="flex gap-6 font-bold tracking-widest uppercase text-sm">
+            </div>
+            <div class="text-3xl font-black tracking-tighter opacity-50">BENNY.MEDIA</div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 700 });
+    </script>
+</body>
+</html>
