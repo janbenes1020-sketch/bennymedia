@@ -127,7 +127,7 @@ body::after {
     radial-gradient(ellipse at 70% 20%, rgba(31,199,193,.12), transparent 55%),
     linear-gradient(180deg, rgba(10,10,10,.55) 0%, rgba(10,10,10,.35) 35%, rgba(10,10,10,.85) 75%, var(--bg) 100%);
 }
-.hero-content { padding-top: 140px; padding-bottom: clamp(40px, 7vh, 80px); }
+.hero-content { padding-top: 140px; padding-bottom: clamp(64px, 12vh, 130px); }
 .hero h1 {
   margin: 22px 0 0;
   font-size: clamp(52px, 10.5vw, 168px);
