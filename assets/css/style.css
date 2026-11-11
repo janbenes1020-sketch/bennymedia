@@ -375,3 +375,23 @@ section { position: relative; }
   .ref { grid-template-columns: 1fr; }
   .ref-flip .ref-shot { order: 0; }
 }
+
+/* avatar */
+.logo { align-items: center; }
+.logo-avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; object-position: 50% 8%; background: var(--bg-3); border: 1px solid rgba(31,199,193,.45); margin-right: 12px; transition: transform .6s var(--ease); }
+.logo:hover .logo-avatar { transform: rotate(-8deg) scale(1.06); }
+.booking-avatar { position: absolute; right: clamp(20px, 4vw, 64px); top: clamp(20px, 3vw, 44px); width: clamp(120px, 13vw, 190px); z-index: 1; pointer-events: none; animation: bob 5s ease-in-out infinite; }
+.booking-avatar img { width: 100%; height: auto; filter: drop-shadow(0 18px 30px rgba(0,0,0,.18)); }
+.bubble { position: absolute; right: 88%; top: 18%; white-space: nowrap; background: #0a0a0a; color: #f2eee6; font-size: 14px; font-weight: 500; padding: 10px 16px; border-radius: 18px 18px 4px 18px; box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+.bubble::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); margin-right: 8px; vertical-align: middle; }
+@keyframes bob { 50% { transform: translateY(-8px); } }
+.booking-card { padding-top: clamp(28px, 5vw, 72px); }
+.booking-head { padding-right: clamp(0px, 16vw, 230px); }
+@media (max-width: 860px) {
+  .booking-avatar { position: relative; right: auto; top: auto; width: 130px; margin: 0 0 18px auto; }
+  .booking-head { padding-right: 0; }
+}
+@media (max-width: 560px) {
+  .logo-avatar { width: 34px; height: 34px; margin-right: 10px; }
+  .logo { font-size: 18px; }
+}
