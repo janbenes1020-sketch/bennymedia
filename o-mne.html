@@ -1,106 +1,159 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O mně | Jan Beneš - Digitální tvorba</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O mně — Jan Beneš | BENNY.MEDIA</title>
+  <meta name="description" content="Jan Beneš alias Benny — nezávislý tvůrce. Weby, natáčení akcí, střih videa a správa sociálních sítí.">
+  <meta name="author" content="Jan Beneš">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:title" content="O mně — Jan Beneš | BENNY.MEDIA">
+  <meta property="og:image" content="assets/img/profilovka.jpg">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <style>
-        body { 
-            font-family: 'Montserrat', sans-serif; 
-            background-color: #09090b; 
-            color: #f8fafc; 
-            overflow-x: hidden;
-        }
-        .border-custom { border-color: #27272a; }
-        .header-uppercase { text-transform: uppercase; letter-spacing: 0.05em; }
-    </style> 
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='40' fill='%23d4b483'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="antialiased min-h-screen flex flex-col">
+<body>
 
-    <nav class="sticky top-0 z-50 bg-[#09090b]/90 backdrop-blur-md border-b-4 border-custom px-6 py-3 h-20 grid grid-cols-2 md:grid-cols-3 items-center">
-        <div class="hidden md:block"></div>
-        
-        <div class="text-left md:text-center">
-            <a href="web.html" class="text-2xl md:text-3xl font-black tracking-tighter hover:text-gray-400 transition">BENNY.MEDIA</a>
-        </div>
-        
-        <div class="flex justify-end items-center gap-4 md:gap-6 font-bold text-[10px] md:text-xs tracking-widest uppercase">
-            <a href="web.html#sluzby" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap">Služby</a>
-            <a href="https://drive.google.com/drive/folders/1-1MyCtyf68ZHPN6m_5NKNIA0el-AaSQm?usp=drive_link" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap">Portfolio</a>
-            <a href="o-mne.html" class="underline decoration-2 underline-offset-8 whitespace-nowrap text-gray-400">O mně</a>
-            <a href="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap text-3b82f6 text-[#3b82f6]">Hovor</a>
-        </div>
-    </nav>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="BENNY.MEDIA domů">BENNY<span>.</span>MEDIA</a>
+      <nav class="nav-links" aria-label="Hlavní navigace">
+        <a href="index.html#sluzby">Služby</a>
+        <a href="index.html#prace">Práce</a>
+        <a href="index.html#proces">Proces</a>
+        <a href="o-mne.html" class="active">O mně</a>
+        <a href="Cenik_Jan_Benes_Prehledny.pdf" target="_blank" rel="noopener">Ceník</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#rezervace" class="btn btn-primary btn-sm">Hovor zdarma
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
 
-    <main class="flex-grow">
-    <!-- Tady je ten nový nadpis vloženej hned na začátek -->
-    <section class="p-10 md:p-20 border-b-4 border-custom text-center bg-[#111113]">
-        <h2 class="text-4xl md:text-6xl font-black header-uppercase tracking-tighter" data-aos="fade-up">O mně</h2>
-        <p class="mt-4 font-medium opacity-60 text-lg" data-aos="fade-up" data-aos-delay="100">Kdo stojí za kamerou, střihem a kódem.</p>
+  <div class="mobile-menu" aria-hidden="true">
+    <a class="big" href="index.html#sluzby">Služby</a>
+    <a class="big" href="index.html#prace"><em>Práce</em></a>
+    <a class="big" href="index.html#proces">Proces</a>
+    <a class="big" href="o-mne.html"><em>O mně</em></a>
+    <a class="big" href="#rezervace">Kontakt</a>
+    <div class="meta">
+      <a href="Cenik_Jan_Benes_Prehledny.pdf" target="_blank" rel="noopener">Stáhnout ceník (PDF) ↗</a><br>
+      <a href="mailto:jan.benes1020@gmail.com">jan.benes1020@gmail.com</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow fade-up">O mně</span>
+        <h1>
+          <span class="line-mask"><span>Za kamerou,</span></span>
+          <span class="line-mask"><span style="--d:.12s">střihem <span class="serif">&amp; kódem.</span></span></span>
+        </h1>
+      </div>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-2 border-b-4 border-custom">
-        <div class="h-[60vh] md:h-auto bg-[#111113] border-b-4 md:border-b-0 md:border-r-4 border-custom overflow-hidden" data-aos="fade-right">
-            <img src="profilovka.jpg" alt="Jan Beneš" class="w-full h-full object-cover transition-all duration-700">
+    <section class="section" style="padding-top:0">
+      <div class="container about">
+        <div class="portrait reveal">
+          <img src="assets/img/profilovka.jpg" alt="Jan Beneš — Benny">
+          <div class="portrait-badge"><span><strong>Jan Beneš</strong> · Benny</span><span><i class="dot"></i>Přijímám zakázky</span></div>
         </div>
-
-        <div class="p-8 md:p-16 lg:p-24 flex flex-col justify-center bg-[#09090b]" data-aos="fade-left">
-            <span class="text-sm font-bold tracking-widest text-zinc-500 uppercase mb-2">Kdo stojí za kamerou a kódem</span>
-            <h1 class="text-4xl md:text-6xl font-black mb-8 header-uppercase leading-none">Jan Beneš</h1>
-            
-            <div class="font-medium text-base md:text-lg leading-relaxed space-y-6 text-zinc-300">
-                <p>
-                    Ahoj, jsem Honza, ale většina lidí v digitálním světě mi říká <span class="text-white font-bold">Benny</span>. Jako nezávislý tvůrce pomáhám značkám a projektům vystoupit z davu. Nedělám kompromisy – buď to dělám pořádně, nebo vůbec.
-                </p>
-                <p>
-                    Můj revír je kompletní digitální produkce. Od <span class="text-white font-bold">programování čistých, rychlých webů</span> přes <span class="text-white font-bold">dynamické natáčení akcí</span> až po precizní <span class="text-white font-bold">střih videa</span> a <span class="text-white font-bold">správu sociálních sítí</span>.
-                </p>
-                <p>
-                    Můj cíl je jednoduchý: doručit vám moderní digitální identitu a obsah, který reálně přináší výsledky, dosahy a nové klienty. Sjíždím nejnovější digitální trendy a přetvářím je do praxe.
-                </p>
-            </div>
+        <div class="about-text reveal" style="--d:.1s">
+          <span class="eyebrow">Kdo jsem</span>
+          <p class="quote">„Buď to dělám <span class="gold">pořádně,</span> nebo vůbec.“</p>
+          <p>Ahoj, jsem Honza, ale většina lidí v digitálním světě mi říká <strong>Benny</strong>. Jako nezávislý tvůrce pomáhám značkám a projektům vystoupit z davu. Nedělám kompromisy.</p>
+          <p>Můj revír je kompletní digitální produkce. Od <strong>programování čistých, rychlých webů</strong> přes <strong>dynamické natáčení akcí</strong> až po precizní <strong>střih videa</strong> a <strong>správu sociálních sítí</strong>.</p>
+          <p>Můj cíl je jednoduchý: doručit vám moderní digitální identitu a obsah, který reálně přináší výsledky, dosahy a nové klienty. Sleduji nejnovější digitální trendy a přetvářím je do praxe.</p>
         </div>
+      </div>
     </section>
-</main>
 
-        <section id="calendly" class="border-b-4 border-custom bg-[#f8fafc] text-[#09090b] p-6 md:p-16">
-            <div class="max-w-5xl mx-auto" data-aos="zoom-in">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-6xl font-black mb-4 header-uppercase">Rezervujte si konzultaci</h2>
-                    <p class="font-medium text-lg max-w-2xl mx-auto opacity-80">
-                        Vyberte si volný čas a probereme, jak společně nakopneme váš projekt, web nebo sociální sítě.
-                    </p>
-                </div>
-                
-                <div class="bg-white rounded-xl shadow-2xl overflow-hidden border-4 border-[#09090b]">
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich" style="min-width:320px;height:700px;"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="kontakt" class="bg-[#09090b] text-white py-12 px-6 md:px-12 mt-auto">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
-            <div class="text-xs md:text-sm">
-                <h4 class="font-black mb-2 uppercase tracking-widest text-[10px] opacity-50">Fakturační údaje</h4>
-                <p class="font-bold">Jan Beneš<br>IČO: 21129380<br>jan.benes1020@gmail.com<br>771160301</p>
-            </div>
-            <div class="flex gap-6 font-bold tracking-widest uppercase text-sm">
-            </div>
-            <div class="text-3xl font-black tracking-tighter opacity-50">BENNY.MEDIA</div>
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <span class="eyebrow">Proč se mnou</span>
+            <h2 class="h2">Jinak než <span class="serif">agentura.</span></h2>
+          </div>
+          <p class="reveal" style="--d:.1s">Komunikujete přímo s tím, kdo vaši zakázku dělá. Bez prostředníků, bez zbytečných poplatků.</p>
         </div>
-    </footer>
+        <div class="values reveal">
+          <div><span class="step-num">01</span><div><h4>Vše z jedné ruky</h4><p>Web, video i sítě v jednotném stylu. Nemusíte koordinovat tři dodavatele.</p></div></div>
+          <div><span class="step-num">02</span><div><h4>Rychlá komunikace</h4><p>Píšete přímo mně. Odpovídám rychle a věci se dějí hned.</p></div></div>
+          <div><span class="step-num">03</span><div><h4>Žádné měsíční poplatky</h4><p>Web je váš. Žádné předplatné šablonových systémů.</p></div></div>
+          <div><span class="step-num">04</span><div><h4>Trendy v praxi</h4><p>Formáty a styl střihu, které na sítích aktuálně fungují.</p></div></div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true, offset: 50, duration: 700 });
-    </script>
+    <section id="rezervace" class="booking">
+      <div class="container">
+        <div class="booking-card reveal">
+          <div class="booking-head">
+            <div>
+              <span class="eyebrow">Rezervujte si konzultaci</span>
+              <h2 class="h2">Nakopněme váš <span class="serif">projekt.</span></h2>
+            </div>
+            <p>Vyberte si volný čas a probereme, jak společně posuneme váš web, video nebo sociální sítě.</p>
+          </div>
+          <div class="calendly-wrap">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich?hide_gdpr_banner=1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="kontakt">
+    <div class="container">
+      <p class="footer-big" aria-hidden="true">BENNY<span>.</span>MEDIA</p>
+      <div class="footer-grid">
+        <div>
+          <h5>Napište mi</h5>
+          <a class="footer-mail" href="mailto:jan.benes1020@gmail.com">jan.benes1020@gmail.com</a>
+          <p style="margin-top:14px"><a href="tel:+420771160301">+420 771 160 301</a></p>
+        </div>
+        <div>
+          <h5>Navigace</h5>
+          <ul>
+            <li><a href="index.html#sluzby">Služby</a></li>
+            <li><a href="index.html#prace">Práce</a></li>
+            <li><a href="o-mne.html">O mně</a></li>
+            <li><a href="#rezervace">Rezervace hovoru</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Odkazy</h5>
+          <ul>
+            <li><a href="Cenik_Jan_Benes_Prehledny.pdf" target="_blank" rel="noopener">Ceník (PDF)</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1-1MyCtyf68ZHPN6m_5NKNIA0el-AaSQm?usp=drive_link" target="_blank" rel="noopener">Portfolio na disku</a></li>
+            <li><a href="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich" target="_blank" rel="noopener">Calendly</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Fakturační údaje</h5>
+          <ul class="muted">
+            <li>Jan Beneš</li>
+            <li>IČO: 21129380</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> BENNY.MEDIA — Jan Beneš</span>
+        <span>Vytvořeno s péčí. Bez měsíčních poplatků.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>

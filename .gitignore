@@ -1,0 +1,6 @@
+# Velké zdrojové soubory videí (na webu se používají zkomprimované verze v assets/media)
+/*.mp4
+/videa novy format/
+/.claude/
+desktop.ini
+Thumbs.db

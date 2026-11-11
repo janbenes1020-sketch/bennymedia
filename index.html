@@ -1,220 +1,368 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- VYLEPŠENÝ TITLE PRO SEO -->
-    <title>Jan Beneš (BENNY.MEDIA) | Tvorba webů, Video produkce & Správa sítí</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jan Beneš — BENNY.MEDIA | Tvorba webů, video produkce a správa sítí</title>
+  <meta name="description" content="Jan Beneš (BENNY.MEDIA) — rychlé weby bez měsíčních poplatků, dynamický střih videa, natáčení akcí a kompletní správa sociálních sítí (Reels, TikTok).">
+  <meta name="author" content="Jan Beneš">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0a0a">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta property="og:title" content="BENNY.MEDIA — Digitální obsah, který prodává">
+  <meta property="og:description" content="Weby bez měsíčních poplatků, videa, která drží pozornost, a sociální sítě, které rostou.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/promo-2-poster.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <!-- VYLEPŠENÉ SEO TAGY -->
-    <meta name="description" content="Jan Beneš (BENNY.MEDIA) - Profesionální tvorba rychlých webů, dynamický střih videa, natáčení akcí a kompletní správa sociálních sítí (Reels, TikTok).">
-    <meta name="keywords" content="Jan Beneš, BENNY.MEDIA, tvorba webů, webdesign, střih videa, natáčení akcí, správa sociálních sítí, video produkce, tvorba Reels">
-    <meta name="author" content="Jan Beneš">
-    <meta name="robots" content="index, follow">
-
-    <!-- OPEN GRAPH TAGY (PRO KRÁSNÉ NÁHLEDY PŘI SDÍLENÍ NA SÍTÍCH) -->
-    <meta property="og:title" content="Jan Beneš (BENNY.MEDIA) | Digitální obsah na klíč">
-    <meta property="og:description" content="Tvořím moderní weby bez měsíčních poplatků, točím dynamická videa a starám se o sociální sítě. Jdeme do toho?">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tvoje-domena.cz"> <!-- Až budeš mít doménu, uprav ji zde -->
-    <meta property="og:image" content="hero-bg.jpg"> <!-- Zobrazí se jako náhledový obrázek odkazu -->
-
-    <style>
-        body { 
-            font-family: 'Montserrat', sans-serif; 
-            background-color: #09090b; 
-            color: #f8fafc; 
-            overflow-x: hidden; 
-            scroll-behavior: smooth; /* Plynulé scrollování */
-        }
-        .border-custom { border-color: #27272a; } 
-        .header-uppercase { text-transform: uppercase; letter-spacing: 0.05em; }
-        
-        .hero-bg {
-            background-image: linear-gradient(to bottom, rgba(9, 9, 11, 0.4), rgba(9, 9, 11, 1)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-        }
-    </style> 
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='40' fill='%23d4b483'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="antialiased min-h-screen flex flex-col">
+<body>
 
-    <nav class="sticky top-0 z-50 bg-[#09090b]/90 backdrop-blur-md border-b-4 border-custom px-6 py-3 h-20 grid grid-cols-2 md:grid-cols-3 items-center">
-        <div class="hidden md:block"></div>
-        
-        <div class="text-left md:text-center">
-            <a href="index.html" class="text-2xl md:text-3xl font-black tracking-tighter hover:text-gray-400 transition">BENNY.MEDIA</a>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="BENNY.MEDIA domů">BENNY<span>.</span>MEDIA</a>
+      <nav class="nav-links" aria-label="Hlavní navigace">
+        <a href="#sluzby">Služby</a>
+        <a href="#prace">Práce</a>
+        <a href="#proces">Proces</a>
+        <a href="o-mne.html">O mně</a>
+        <a href="Cenik_Jan_Benes_Prehledny.pdf" target="_blank" rel="noopener">Ceník</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#rezervace" class="btn btn-primary btn-sm">Hovor zdarma
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <a class="big" href="#sluzby">Služby</a>
+    <a class="big" href="#prace"><em>Práce</em></a>
+    <a class="big" href="#proces">Proces</a>
+    <a class="big" href="o-mne.html"><em>O mně</em></a>
+    <a class="big" href="#rezervace">Kontakt</a>
+    <div class="meta">
+      <a href="Cenik_Jan_Benes_Prehledny.pdf" target="_blank" rel="noopener">Stáhnout ceník (PDF) ↗</a><br>
+      <a href="mailto:jan.benes1020@gmail.com">jan.benes1020@gmail.com</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-media">
+        <video autoplay muted loop playsinline preload="auto" poster="assets/img/promo-2-poster.jpg">
+          <source src="assets/media/promo-2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="scroll-hint">Scroll</div>
+
+      <div class="container hero-content">
+        <span class="eyebrow fade-up">Jan Beneš — video · web · sociální sítě</span>
+        <h1>
+          <span class="line-mask"><span>Digitální obsah,</span></span>
+          <span class="line-mask"><span style="--d:.12s">který <span class="serif">prodává.</span></span></span>
+        </h1>
+
+        <div class="hero-bottom">
+          <p class="hero-lead fade-up" style="--d:.4s">
+            Stříhám videa, tvořím weby, točím akce a starám se o vaše sociální sítě. Jeden člověk, jeden styl, žádná agenturní byrokracie.
+          </p>
+          <div class="hero-actions fade-up" style="--d:.5s">
+            <a href="#rezervace" class="btn btn-primary">Domluvit hovor zdarma
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#prace" class="btn btn-ghost">Ukázky práce</a>
+          </div>
         </div>
-        
-        <div class="flex justify-end items-center gap-3 md:gap-6 font-bold text-[10px] md:text-xs tracking-widest uppercase">
-            <a href="#sluzby" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap">Služby</a>
-            <!-- PŘIDANÝ ODKAZ NA CENÍK V MENU -->
-            <a href="Cenik_Jan_Benes_Prehledny.pdf" target="_blank" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap text-zinc-400">Ceník</a>
-            <a href="https://drive.google.com/drive/folders/1-1MyCtyf68ZHPN6m_5NKNIA0el-AaSQm?usp=drive_link" target="_blank" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap">Portfolio</a>
-            <a href="o-mne.html" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap hidden md:inline-block">O mně</a>
-            <a href="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich" class="hover:underline decoration-2 underline-offset-8 whitespace-nowrap text-[#3b82f6]">Hovor</a>
+
+        <div class="hero-stats fade-up" style="--d:.65s">
+          <div><div class="stat-num"><span data-count="821">821</span>K</div><div class="stat-label">zobrazení příspěvků klienta</div></div>
+          <div><div class="stat-num"><span data-count="45">45</span>K</div><div class="stat-label">lajků pod jedním profilem</div></div>
+          <div><div class="stat-num">4</div><div class="stat-label">služby pod jednou střechou</div></div>
+          <div><div class="stat-num">0 Kč</div><div class="stat-label">měsíčních poplatků za web</div></div>
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <header class="relative border-b-4 border-custom h-[85vh] flex items-center justify-center overflow-hidden hero-bg">
-        <div class="relative z-10 text-center px-4 max-w-4xl" data-aos="zoom-in" data-aos-duration="1000">
-            <h1 class="text-[12vw] md:text-[5vw] leading-none font-black tracking-tighter mb-6 header-uppercase">
-                Digitální obsah
-            </h1>
-            <p class="text-lg md:text-2xl font-medium opacity-80 mb-10"> 
-                Stříhám videa, tvořím weby, točím akce a starám se o vaše sociální sítě.
-            </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center items-center font-bold header-uppercase">
-                <a href="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich" target="_blank" class="w-full md:w-auto bg-white text-black px-10 py-4 border-4 border-white hover:bg-transparent hover:text-white transition-all duration-300 text-sm md:text-lg tracking-widest text-center">
-                    Domluvit hovor
-                </a>
-                <a href="#portfolio" class="w-full md:w-auto bg-transparent text-white px-10 py-4 border-4 border-white hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-lg tracking-widest text-center">
-                    Ukázky práce
-                </a>
-            </div>
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Tvorba webů</span><span>Natáčení akcí</span><span>Střih videa</span><span>Správa sítí</span><span>Reels &amp; TikTok</span><span>Promo videa</span>
+        <span>Tvorba webů</span><span>Natáčení akcí</span><span>Střih videa</span><span>Správa sítí</span><span>Reels &amp; TikTok</span><span>Promo videa</span>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="sluzby" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <span class="eyebrow">Služby</span>
+            <h2 class="h2">Vše, co vaše značka <span class="serif">potřebuje.</span></h2>
+          </div>
+          <p class="reveal" style="--d:.1s">Od prvního záběru po hotový web. Kompletní digitální prezentace, která vypadá prémiově a reálně přináší dosahy i klienty.</p>
         </div>
-    </header>
 
-    <main>
-        <section id="sluzby" class="p-10 md:p-20 border-b-4 border-custom text-center bg-[#111113]">
-            <h2 class="text-4xl md:text-6xl font-black header-uppercase tracking-tighter" data-aos="fade-up">Moje služby</h2>
-            <p class="mt-4 font-medium opacity-60 text-lg mb-10" data-aos="fade-up" data-aos-delay="100">Vše, co potřebujete pro moderní prezentaci vaší značky.</p>
-            
-            <!-- PŘIDANÉ TLAČÍTKO NA CENÍK POD NADPISEM SLUŽEB -->
-            <div data-aos="fade-up" data-aos-delay="200">
-                <a href="Cenik_Jan_Benes_Prehledny.pdf" target="_blank" class="inline-block bg-zinc-800 text-white px-8 py-3 border-2 border-zinc-700 hover:bg-white hover:text-black hover:border-white transition-all duration-300 font-bold text-sm tracking-widest uppercase">
-                    📄 Stáhnout orientační ceník (PDF)
-                </a>
-            </div>
-        </section>
-
-        <section class="grid grid-cols-1 md:grid-cols-2">
-            <div class="p-10 md:p-20 border-b-4 md:border-r-4 border-custom bg-[#09090b] flex flex-col justify-center" data-aos="fade-right">
-                <div class="text-4xl mb-6">💻</div>
-                <h3 class="font-black text-2xl md:text-4xl mb-4 header-uppercase">Tvorba webů</h3>
-                <p class="font-medium text-base md:text-lg leading-relaxed opacity-80">Programuji bleskově rychlé a responzivní weby bez zbytečných měsíčních poplatků. Čistý kód, moderní vzhled.</p>
-            </div>
-            <div class="p-10 md:p-20 border-b-4 border-custom bg-[#111113] flex flex-col justify-center" data-aos="fade-left" data-aos-delay="100">
-                <div class="text-4xl mb-6">🎥</div>
-                <h3 class="font-black text-2xl md:text-4xl mb-4 header-uppercase">Natáčení akcí</h3>
-                <p class="font-medium text-base md:text-lg leading-relaxed opacity-80">Zachytím atmosféru vašeho eventu. Zaměřuji se na dynamické záběry, které vtáhnou diváka přímo do centra dění.</p>
-            </div>
-            <div class="p-10 md:p-20 border-b-4 md:border-b-0 md:border-r-4 border-custom bg-[#111113] flex flex-col justify-center" data-aos="fade-right" data-aos-delay="200">
-                <div class="text-4xl mb-6">✂️</div>
-                <h3 class="font-black text-2xl md:text-4xl mb-4 header-uppercase">Střih videa</h3>
-                <p class="font-medium text-base md:text-lg leading-relaxed opacity-80">Zpracuji dodaný materiál do poutavého celku. Včetně možnosti dodání čistých raw záběrů (bez textů a titulků) pro vaše vlastní další úpravy.</p>
-            </div>
-            <div class="p-10 md:p-20 bg-[#09090b] flex flex-col justify-center border-b-4 md:border-b-0 border-custom" data-aos="fade-left" data-aos-delay="300">
-                <div class="text-4xl mb-6">📱</div>
-                <h3 class="font-black text-2xl md:text-4xl mb-4 header-uppercase">Správa sítí</h3>
-                <p class="font-medium text-base md:text-lg leading-relaxed opacity-80">Postarám se o váš Instagram či TikTok. Od strategie až po vizuálně atraktivní Reels, které přinesou dosahy.</p>
-            </div>
-        </section>
-
-        <section id="portfolio" class="p-10 md:p-20 border-t-4 border-b-4 border-custom text-center bg-[#111113]">
-            <h2 class="text-4xl md:text-6xl font-black header-uppercase tracking-tighter" data-aos="fade-up">Portfolio</h2>
-            <p class="mt-4 font-medium opacity-60 text-lg" data-aos="fade-up" data-aos-delay="100">Výsledky mluví za vše. Podívejte se na moji práci.</p>
-        </section>
-
-        <section class="bg-[#09090b] p-6 md:p-12 lg:p-20 space-y-24">
-            
-            <div data-aos="fade-up">
-                <h3 class="font-black text-2xl mb-8 uppercase tracking-widest border-b-2 border-custom pb-4 inline-block">Reels & TikTok</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <video class="aspect-[9/16] w-full object-cover border-2 border-custom rounded-lg hover:scale-105 transition-transform duration-500" autoplay loop muted playsinline src="reels-1.mp4"></video>
-                    <video class="aspect-[9/16] w-full object-cover border-2 border-custom rounded-lg hover:scale-105 transition-transform duration-500" autoplay loop muted playsinline src="reels-2.mp4"></video>
-                    <video class="aspect-[9/16] w-full object-cover border-2 border-custom rounded-lg hover:scale-105 transition-transform duration-500" autoplay loop muted playsinline src="reels-3.mp4"></video>
-                </div>
-            </div>
-
-            <div data-aos="fade-up">
-                <h3 class="font-black text-2xl mb-8 uppercase tracking-widest border-b-2 border-custom pb-4 inline-block">Promo videa & Akce</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <video class="aspect-video w-full object-cover border-2 border-custom rounded-lg hover:scale-105 transition-transform duration-500" autoplay loop muted playsinline src="promo-1.mp4"></video>
-                    <video class="aspect-video w-full object-cover border-2 border-custom rounded-lg hover:scale-105 transition-transform duration-500" autoplay loop muted playsinline src="promo-2.mp4"></video>
-                </div>
-            </div>
-
-            <div class="text-center pt-4" data-aos="fade-up">
-                <a href="https://drive.google.com/drive/folders/1-1MyCtyf68ZHPN6m_5NKNIA0el-AaSQm?usp=drive_link" target="_blank" class="inline-block bg-transparent text-white px-8 py-3 border-4 border-zinc-700 hover:border-white hover:bg-white hover:text-black transition-all duration-300 font-bold text-sm tracking-widest uppercase">
-                    📁 Otevřít kompletní disk s videi
-                </a>
-            </div>
-
-            <div data-aos="fade-up">
-                <h3 class="font-black text-2xl mb-8 uppercase tracking-widest border-b-2 border-custom pb-4 inline-block">Tvorba webů</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <img src="web-1.jpg" alt="Ukázka tvorby webu 1" class="aspect-video w-full object-cover rounded-lg border-2 border-custom hover:scale-105 transition-transform duration-500">
-                    <img src="web-2.jpg" alt="Ukázka tvorby webu 2" class="aspect-video w-full object-cover rounded-lg border-2 border-custom hover:scale-105 transition-transform duration-500">
-                </div>
-            </div>
-
-            <div data-aos="fade-up">
-                <h3 class="font-black text-2xl mb-8 uppercase tracking-widest border-b-2 border-custom pb-4 inline-block">Výsledky ze sítí</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <img src="stats-1.jpg" alt="Dosahy na sociálních sítích 1" class="aspect-video w-full object-cover rounded-lg border-2 border-custom hover:scale-105 transition-transform duration-500">
-                    <img src="stats-2.jpg" alt="Dosahy na sociálních sítích 2" class="aspect-video w-full object-cover rounded-lg border-2 border-custom hover:scale-105 transition-transform duration-500">
-                </div>
-            </div>
-        </section>
-
-        <section class="p-10 md:p-20 border-t-4 border-b-4 border-custom text-center bg-[#111113]">
-            <div class="max-w-3xl mx-auto" data-aos="fade-up">
-                <span class="text-sm font-bold tracking-widest text-zinc-500 uppercase mb-2 block">Kdo pro vás tvoří</span>
-                <h2 class="text-3xl md:text-5xl font-black header-uppercase tracking-tighter mb-6">Jan Beneš — Benny</h2>
-                <p class="font-medium opacity-70 text-base md:text-lg mb-8">
-                    Chcete vědět, jak pracuji, jakou používám techniku a proč dělám digitální tvorbu jinak než klasické agentury? Podívejte se na můj profil.
-                </p>
-                <a href="o-mne.html" class="inline-block bg-white text-black px-8 py-3 border-4 border-white hover:bg-transparent hover:text-white transition-all duration-300 font-bold text-sm tracking-widest uppercase header-uppercase">
-                    Více o mně
-                </a>
-            </div>
-        </section>
-
-        <section id="calendly" class="border-b-4 border-custom bg-[#f8fafc] text-[#09090b] p-6 md:p-16">
-            <div class="max-w-5xl mx-auto" data-aos="zoom-in">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl md:text-6xl font-black mb-4 header-uppercase">Pojďme do toho</h2>
-                    <p class="font-medium text-lg max-w-2xl mx-auto opacity-80">
-                        Vyberte si termín v kalendáři a dáme si krátký online hovor zdarma, kde probereme, jak vám můžu pomoct.
-                    </p>
-                </div>
-                
-                <div class="bg-white rounded-xl shadow-2xl overflow-hidden border-4 border-[#09090b]">
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich" style="min-width:320px;height:700px;"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="kontakt" class="bg-[#09090b] text-white py-12 px-6 md:px-12 mt-auto">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
-            <div class="text-xs md:text-sm">
-                <h4 class="font-black mb-2 uppercase tracking-widest text-[10px] opacity-50">Fakturační údaje</h4>
-                <p class="font-bold">Jan Beneš<br>IČO: 21129380<br>jan.benes1020@gmail.com<br>771160301</p>
-            </div>
-            
-            <div class="flex gap-6 font-bold tracking-widest uppercase text-sm">
-                <!-- Tady máš připravené odkazy na sociální sítě -->
-            </div>
-
-            <div class="text-3xl font-black tracking-tighter opacity-50">BENNY.MEDIA</div>
+        <div class="services">
+          <article class="service reveal">
+            <span class="service-num">01</span>
+            <h3>Tvorba webů</h3>
+            <p>Programuji bleskově rychlé a responzivní weby bez zbytečných měsíčních poplatků. Čistý kód, moderní vzhled, plná kontrola.</p>
+            <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </article>
+          <article class="service reveal">
+            <span class="service-num">02</span>
+            <h3>Natáčení akcí</h3>
+            <p>Zachytím atmosféru vašeho eventu. Dynamické záběry, které vtáhnou diváka přímo do centra dění.</p>
+            <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </article>
+          <article class="service reveal">
+            <span class="service-num">03</span>
+            <h3>Střih videa</h3>
+            <p>Zpracuji dodaný materiál do poutavého celku. Na přání dodám i čisté raw záběry bez textů a titulků pro vaše další úpravy.</p>
+            <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </article>
+          <article class="service reveal">
+            <span class="service-num">04</span>
+            <h3>Správa sítí</h3>
+            <p>Postarám se o váš Instagram či TikTok. Od strategie až po vizuálně atraktivní Reels, které přinesou dosahy.</p>
+            <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </article>
         </div>
-    </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-            offset: 100,
-            duration: 700
-        });
-    </script>
+        <div class="services-foot reveal">
+          <span>Transparentní ceny bez skrytých poplatků.</span>
+          <a href="Cenik_Jan_Benes_Prehledny.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Stáhnout ceník (PDF)
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="prace" class="section work">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <span class="eyebrow">Vybraná práce</span>
+            <h2 class="h2">Výsledky mluví <span class="serif">za vše.</span></h2>
+          </div>
+          <p class="reveal" style="--d:.1s">Reels, promo videa, weby i čísla ze sítí. Klikněte na ikonu reproduktoru a pusťte si video se zvukem.</p>
+        </div>
+
+        <!-- Reels -->
+        <div class="work-block">
+          <div class="work-label reveal"><h3>Reels &amp; TikTok</h3><span>Vertikální obsah · střih · motion</span></div>
+          <div class="grid-reels">
+            <div class="media vertical reveal">
+              <video muted loop playsinline preload="none" poster="assets/img/reels-1-poster.jpg" data-src="assets/media/reels-1.mp4"></video>
+              <span class="media-tag">Talking head</span>
+              <button class="sound-btn" aria-label="Zapnout zvuk" aria-pressed="false">
+                <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+                <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
+            </div>
+            <div class="media vertical reveal" style="--d:.1s">
+              <video muted loop playsinline preload="none" poster="assets/img/reels-2-poster.jpg" data-src="assets/media/reels-2.mp4"></video>
+              <span class="media-tag">Před / po střihu</span>
+              <button class="sound-btn" aria-label="Zapnout zvuk" aria-pressed="false">
+                <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+                <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
+            </div>
+            <div class="media vertical reveal" style="--d:.2s">
+              <video muted loop playsinline preload="none" poster="assets/img/reels-3-poster.jpg" data-src="assets/media/reels-3.mp4"></video>
+              <span class="media-tag">Sport</span>
+              <button class="sound-btn" aria-label="Zapnout zvuk" aria-pressed="false">
+                <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+                <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promo -->
+        <div class="work-block">
+          <div class="work-label reveal"><h3>Promo videa &amp; akce</h3><span>Eventy · koncerty · festivaly</span></div>
+          <div class="grid-2">
+            <div class="media wide reveal">
+              <video muted loop playsinline preload="none" poster="assets/img/promo-1-poster.jpg" data-src="assets/media/promo-1.mp4"></video>
+              <span class="media-tag">Koncert</span>
+              <button class="sound-btn" aria-label="Zapnout zvuk" aria-pressed="false">
+                <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+                <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
+            </div>
+            <div class="media wide reveal" style="--d:.1s">
+              <video muted loop playsinline preload="none" poster="assets/img/promo-2-poster.jpg" data-src="assets/media/promo-2.mp4"></video>
+              <span class="media-tag">Festival</span>
+              <button class="sound-btn" aria-label="Zapnout zvuk" aria-pressed="false">
+                <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="m23 9-6 6M17 9l6 6"/></svg>
+                <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="drive-cta reveal">
+            <p>Chcete vidět víc? <span class="serif gold">Kompletní archiv videí</span> je na disku.</p>
+            <a href="https://drive.google.com/drive/folders/1-1MyCtyf68ZHPN6m_5NKNIA0el-AaSQm?usp=drive_link" target="_blank" rel="noopener" class="btn btn-ghost">Otevřít portfolio
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Web -->
+        <div class="work-block">
+          <div class="work-label reveal"><h3>Tvorba webů</h3><span>Design · vývoj · rychlost</span></div>
+          <div class="grid-2">
+            <figure class="media browser zoomable reveal" style="margin:0">
+              <img src="assets/img/web-1.jpg" alt="Web restaurace a penzionu Ostrov" loading="lazy">
+              <span class="media-tag">Restaurace &amp; penzion</span>
+            </figure>
+            <figure class="media browser zoomable reveal" style="margin:0; --d:.1s">
+              <img src="assets/img/web-2.jpg" alt="E-shop Maku.football s fotbalovými chrániči" loading="lazy">
+              <span class="media-tag">E-shop</span>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="work-block">
+          <div class="work-label reveal"><h3>Výsledky ze sítí</h3><span>Reálná data z klientských profilů</span></div>
+          <div class="results-grid reveal">
+            <div><div class="stat-num"><span data-count="821">821</span><span class="gold">K</span></div><div class="stat-label">zobrazení příspěvků</div></div>
+            <div><div class="stat-num"><span data-count="45">45</span><span class="gold">K</span></div><div class="stat-label">lajků</div></div>
+            <div><div class="stat-num"><span data-count="5106">5106</span></div><div class="stat-label">sdílení</div></div>
+            <div><div class="stat-num">+<span data-count="1420">1420</span><span class="gold">%</span></div><div class="stat-label">růst zobrazení za období</div></div>
+          </div>
+          <div class="grid-2">
+            <figure class="media zoomable reveal" style="margin:0">
+              <img src="assets/img/stats-1.jpg" alt="Statistiky dosahů na sociálních sítích 1" loading="lazy" style="aspect-ratio:16/9">
+            </figure>
+            <figure class="media zoomable reveal" style="margin:0; --d:.1s">
+              <img src="assets/img/stats-2.jpg" alt="Statistiky dosahů na sociálních sítích 2" loading="lazy" style="aspect-ratio:16/9">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="proces" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="reveal">
+            <span class="eyebrow">Jak spolupracujeme</span>
+            <h2 class="h2">Jednoduše. <span class="serif">Rychle.</span></h2>
+          </div>
+          <p class="reveal" style="--d:.1s">Žádné zdlouhavé schůzky a nekonečné e-maily. Jasný plán, rychlá komunikace a výsledek, za kterým si stojím.</p>
+        </div>
+        <div class="process">
+          <div class="step reveal">
+            <span class="step-num">01</span>
+            <div><h4>Hovor zdarma</h4><p>Krátký online call, kde probereme vaše cíle, značku a co vám nejvíc pomůže.</p></div>
+          </div>
+          <div class="step reveal" style="--d:.1s">
+            <span class="step-num">02</span>
+            <div><h4>Návrh &amp; produkce</h4><p>Připravím plán, natočím, nastříhám nebo naprogramuji. Průběžně vidíte, jak to vypadá.</p></div>
+          </div>
+          <div class="step reveal" style="--d:.2s">
+            <span class="step-num">03</span>
+            <div><h4>Spuštění &amp; růst</h4><p>Obsah jde ven. Sledujeme čísla a ladíme, aby přinášel dosahy a nové klienty.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT TEASER -->
+    <section class="section" style="padding-top:0">
+      <div class="container about">
+        <div class="portrait reveal">
+          <img src="assets/img/profilovka.jpg" alt="Jan Beneš — Benny" loading="lazy">
+          <div class="portrait-badge"><span><strong>Jan Beneš</strong> · Benny</span><span><i class="dot"></i>Přijímám zakázky</span></div>
+        </div>
+        <div class="about-text reveal" style="--d:.1s">
+          <span class="eyebrow">Kdo pro vás tvoří</span>
+          <p class="quote">„Buď to dělám <span class="gold">pořádně,</span> nebo vůbec.“</p>
+          <p>Jsem Honza, v digitálním světě <strong>Benny</strong>. Jako nezávislý tvůrce pomáhám značkám vystoupit z davu — od <strong>kódu</strong> přes <strong>kameru</strong> až po <strong>střih</strong> a <strong>sociální sítě</strong>.</p>
+          <p style="margin-bottom:36px">Chcete vědět, jak pracuji a proč dělám digitální tvorbu jinak než klasické agentury?</p>
+          <a href="o-mne.html" class="btn btn-ghost">Více o mně
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="rezervace" class="booking">
+      <div class="container">
+        <div class="booking-card reveal">
+          <div class="booking-head">
+            <div>
+              <span class="eyebrow">Pojďme do toho</span>
+              <h2 class="h2">Domluvme si <span class="serif">hovor.</span></h2>
+            </div>
+            <p>Vyberte si termín v kalendáři. Krátký online hovor je zdarma — probereme, jak vám můžu pomoct.</p>
+          </div>
+          <div class="calendly-wrap">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich?hide_gdpr_banner=1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="kontakt">
+    <div class="container">
+      <p class="footer-big" aria-hidden="true">BENNY<span>.</span>MEDIA</p>
+      <div class="footer-grid">
+        <div>
+          <h5>Napište mi</h5>
+          <a class="footer-mail" href="mailto:jan.benes1020@gmail.com">jan.benes1020@gmail.com</a>
+          <p style="margin-top:14px"><a href="tel:+420771160301">+420 771 160 301</a></p>
+        </div>
+        <div>
+          <h5>Navigace</h5>
+          <ul>
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#prace">Práce</a></li>
+            <li><a href="o-mne.html">O mně</a></li>
+            <li><a href="#rezervace">Rezervace hovoru</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Odkazy</h5>
+          <ul>
+            <li><a href="Cenik_Jan_Benes_Prehledny.pdf" target="_blank" rel="noopener">Ceník (PDF)</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1-1MyCtyf68ZHPN6m_5NKNIA0el-AaSQm?usp=drive_link" target="_blank" rel="noopener">Portfolio na disku</a></li>
+            <li><a href="https://calendly.com/jan-benes1020/zdarma-konzulatce-o-soc-sitich" target="_blank" rel="noopener">Calendly</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Fakturační údaje</h5>
+          <ul class="muted">
+            <li>Jan Beneš</li>
+            <li>IČO: 21129380</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> BENNY.MEDIA — Jan Beneš</span>
+        <span>Vytvořeno s péčí. Bez měsíčních poplatků.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
